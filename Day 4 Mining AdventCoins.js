@@ -9,7 +9,7 @@ var hexCode = 0;
 
 for (var i=0; i<99999999; i++) {
 	
-	//Converts puzzle input plus i integer tp hexcode
+	//Converts puzzle input plus i integer to hexcode
 	hexCode = MD5(puzzleInput + i.toString());
 	
 	//Test for five leading 0s in hexCode
