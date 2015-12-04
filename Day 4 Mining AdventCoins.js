@@ -5,12 +5,11 @@ var _0x8601=["\x6C\x65\x6E\x67\x74\x68","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x7
 var puzzleInput = 'yzbqklnj';
 var lowestFiveNum = 0;
 var lowestSixNum = 0;
-var hexCode = 0;
 
 for (var i=0; i<99999999; i++) {
 	
 	//Converts puzzle input plus i integer to hexcode
-	hexCode = MD5(puzzleInput + i.toString());
+	var hexCode = MD5(puzzleInput + i.toString());
 	
 	//Test for five leading 0s in hexCode
 	if (lowestFiveNum == 0 && /^00000/.test(hexCode)) {
